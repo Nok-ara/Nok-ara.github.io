@@ -3,15 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>マークダウン形式のコマンドメモ</title>
   </head>
   <body>
-    <h1>ここは大きく表示されます。</h1>
-    <p>pは「paragraph（＝段落）」のpです。</p>
-    <p>「img」を使うと画像の表示ができます。</p>
-    <img
-      src="https://html-css-guide-five.vercel.app/images/og-image-for-top-v2.png"
-      width="700"
-    />
+    <h1>マークダウン形式のコマンドメモ</h1>
+    <p>よく使うマークダウン記法のコマンドをまとめました。</p>
+    <table border="1" cellpadding="8" style="border-collapse:collapse;">
+      <thead>
+        <tr>
+          <th>書き方</th>
+          <th>表示例</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code># 見出し1</code></td>
+          <td><strong>見出し1</strong></td>
+        </tr>
+        <tr>
+          <td><code>## 見出し2</code></td>
+          <td><strong>見出し2</strong></td>
+        </tr>
+        <tr>
+          <td><code>**太字**</code></td>
+          <td><strong>太字</strong></td>
+        </tr>
+        <tr>
+          <td><code>*斜体*</code></td>
+          <td><em>斜体</em></td>
+        </tr>
+        <tr>
+          <td><code>- リスト1<br>- リスト2</code></td>
+          <td>
+            <ul><li>リスト1</li><li>リスト2</li></ul>
+          </td>
+        </tr>
+        <tr>
+          <td><code>1. 番号付きリスト1<br>2. 番号付きリスト2</code></td>
+          <td>
+            <ol><li>番号付きリスト1</li><li>番号付きリスト2</li></ol>
+          </td>
+        </tr>
+        <tr>
+          <td><code>[リンクテキスト](URL)</code></td>
+          <td><a href="https://example.com">リンクテキスト</a></td>
+        </tr>
+        <tr>
+          <td><code>![代替テキスト](画像URL)</code></td>
+          <td><img src="https://html-css-guide-five.vercel.app/images/og-image-for-top-v2.png" alt="代替テキスト" width="120" /></td>
+        </tr>
+        <tr>
+          <td><code>`インラインコード`</code></td>
+          <td><code>インラインコード</code></td>
+        </tr>
+        <tr>
+          <td><code>```<br>コードブロック<br>```</code></td>
+          <td><pre><code>コードブロック</code></pre></td>
+        </tr>
+        <tr>
+          <td><code>&gt; 引用</code></td>
+          <td><blockquote>引用</blockquote></td>
+        </tr>
+        <tr>
+          <td><code>--- （または ***）</code></td>
+          <td><hr /></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>※実際のマークダウンエディタでご利用ください。</p>
   </body>
 </html>
