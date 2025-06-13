@@ -1,84 +1,44 @@
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>マークダウン形式のコマンドメモ</title>
-    <style>
-      body { font-family: 'Segoe UI', 'Meiryo', sans-serif; background: #f9f9f9; margin: 0; padding: 2em; }
-      h1 { color: #333; }
-      table { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; margin-top: 1em; }
-      th, td { padding: 0.7em 1em; }
-      th { background: #f0f0f0; }
-      code { background: #eee; padding: 2px 6px; border-radius: 4px; }
-      pre { background: #eee; padding: 8px; border-radius: 4px; }
-    </style>
-  </head>
-  <body>
-    <h1>マークダウン形式のコマンドメモ</h1>
-    <p>よく使うマークダウン記法のコマンドをまとめました。</p>
-    <table border="1" cellpadding="8" style="border-collapse:collapse;">
-      <thead>
-        <tr>
-          <th>書き方</th>
-          <th>表示例</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><code># 見出し1</code></td>
-          <td><strong>見出し1</strong></td>
-        </tr>
-        <tr>
-          <td><code>## 見出し2</code></td>
-          <td><strong>見出し2</strong></td>
-        </tr>
-        <tr>
-          <td><code>**太字**</code></td>
-          <td><strong>太字</strong></td>
-        </tr>
-        <tr>
-          <td><code>*斜体*</code></td>
-          <td><em>斜体</em></td>
-        </tr>
-        <tr>
-          <td><code>- リスト1<br>- リスト2</code></td>
-          <td>
-            <ul><li>リスト1</li><li>リスト2</li></ul>
-          </td>
-        </tr>
-        <tr>
-          <td><code>1. 番号付きリスト1<br>2. 番号付きリスト2</code></td>
-          <td>
-            <ol><li>番号付きリスト1</li><li>番号付きリスト2</li></ol>
-          </td>
-        </tr>
-        <tr>
-          <td><code>[リンクテキスト](URL)</code></td>
-          <td><a href="https://example.com">リンクテキスト</a></td>
-        </tr>
-        <tr>
-          <td><code>![代替テキスト](画像URL)</code></td>
-          <td><img src="https://html-css-guide-five.vercel.app/images/og-image-for-top-v2.png" alt="代替テキスト" width="120" /></td>
-        </tr>
-        <tr>
-          <td><code>`インラインコード`</code></td>
-          <td><code>インラインコード</code></td>
-        </tr>
-        <tr>
-          <td><code>```<br>コードブロック<br>```</code></td>
-          <td><pre><code>コードブロック</code></pre></td>
-        </tr>
-        <tr>
-          <td><code>&gt; 引用</code></td>
-          <td><blockquote>引用</blockquote></td>
-        </tr>
-        <tr>
-          <td><code>--- （または ***）</code></td>
-          <td><hr /></td>
-        </tr>
-      </tbody>
-    </table>
-    <p style="margin-top:2em; color:#666;">※実際のマークダウンエディタでご利用ください。</p>
-  </body>
+<html>
+<head>
+  <title>コマンドまとめ</title>
+</head>
+<body>
+  <h1>コマンドまとめ</h1>
+
+  <section>
+    <h2>Markdownコマンド</h2>
+    <p>以下は一般的なMarkdownコマンドのリストです。</p>
+    <ul>
+      <li>**# 見出し** - 見出しを作成します。</li>
+      <li>***強調** - テキストを太字にします。</li>
+      <li>''強調'' - テキストを斜体に表示します。</li>
+      <li>`コード` - コードブロックを作成します。</li>
+      <li>[リンク](URL) - リンクを作成します。</li>
+      <li>(画像)(URL) - 画像を挿入します。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>コマンドの例</h2>
+    <p>以下にコマンドの使い方の例を示します。</p>
+
+    <pre>
+      # これは第1階のヘッダーです
+      ## これは第2階のヘッダーです
+      ### これは第3階のヘッダーです
+
+      これは**太字**のテキストです。
+
+      これは<em>斜体のテキスト</em>です。
+
+      ```python
+      print("Hello, world!")
+      ```
+
+      [Google](https://www.google.com)
+    </pre>
+  </section>
+
+</body>
 </html>
